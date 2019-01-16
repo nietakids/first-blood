@@ -1,0 +1,13 @@
+body {
+    background: #21230C url('../img/bg2.jpg') repeat-y;
+    background-attachment: fixed;
+    background-size: auto;
+    color: #21230C;
+}
+
+.container {
+    max-width: 1000px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    padding: 1rem 2rem;    
+}
