@@ -1,28 +1,79 @@
 body {
-    background: #21230C url('../img/bg2.jpg') repeat-y;
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(47,23,15,.65))), url('../img/bg2.jpg');
     background-attachment: fixed;
-    background-size: auto;
-    color: black;
-    text-align: center;
+    background-position: center;
+    background-size: cover;
+
+    color: #212529;
     font-family: 'Lora', serif;
-    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
 }
-header {
+
+h1, h2, h3, h4, h5 {
     font-family: 'Raleway', sans-serif;
 }
 
 .container {
-    max-width: 1000px;
-    background-color: rgba(255, 255, 255, 0.5);
     margin: 0 auto;
-    padding: 1rem 2rem;    
 }
-ul li {
-    display: inline;
-    background-color: #21230C;
+
+@media all and (min-width: 1200px) {
+    .container {
+        max-width: 1110px;
+    }
+}    
+
+@media all and (min-width: 1000px) {
+    .container {
+        max-width: 960px;
+    }
+}    
+
+header .head {
+    margin: 80px auto;
+    text-align: center;
+}
+
+header sub {
+    color: #7d7e42;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+header h1 {    
+    color: #f1f0ed;
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    line-height: 2.8rem;
+    font-weight: 100;
+}
+
+header nav {
+    width: 100%;    
+    background-color: rgba(33,35,12,.65)
+}
+
+header ul  {
+    display: flex;
+    margin: 0 auto;
+}
+
+header li  {
+    display: inline-block;    
+    margin: 30px;
+}
+
+header li a {
+    display: block;
+    padding: 5px 20px;
+    margin-left: 10px;
     font-size: 18px;
     color: #ffff;
+    text-align: center;    
 }
+
 .secondery-box {
     background-color: #7D7E42;
 }
