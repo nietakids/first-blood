@@ -2,7 +2,13 @@ body {
     background: #21230C url('../img/bg2.jpg') repeat-y;
     background-attachment: fixed;
     background-size: auto;
-    color: #21230C;
+    color: black;
+    text-align: center;
+    font-family: 'Lora', serif;
+    text-align: center;
+}
+header {
+    font-family: 'Raleway', sans-serif;
 }
 
 .container {
@@ -10,4 +16,13 @@ body {
     background-color: rgba(255, 255, 255, 0.5);
     margin: 0 auto;
     padding: 1rem 2rem;    
+}
+ul li {
+    display: inline;
+    background-color: #21230C;
+    font-size: 18px;
+    color: #ffff;
+}
+.secondery-box {
+    background-color: #7D7E42;
 }
