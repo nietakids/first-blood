@@ -1,0 +1,59 @@
+body {
+    background: #21230C url('../img/bg2.jpg') repeat-y;
+    background-attachment: fixed;
+    background-size: auto;
+    color: black;
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+
+.container {
+    max-width: 750px;
+    background-color: #dfddda;
+    margin: auto;
+    padding: 1rem 2rem;    
+}
+header {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+ul li {
+    display: inline;
+    text-align: center;
+    line-height: 15px;
+    letter-spacing: 1px;
+    word-spacing: 6px;
+    font-size: 12px;
+    box-sizing: content-box;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+        
+}
+h1 {
+    color: #ffffff;
+    font-size: 48px;
+}
+h3 {
+    color: #7D7E42;
+    font-size: 32px;
+}
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+}
+h6 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+     
+}
+img {
+    object-position: center;
+    width: 700px;
+    height: 500px;
+}
+div {
+    padding: 10px;
+    width: content-box;
+    height: content-box;
+    text-align: center;
+  }
