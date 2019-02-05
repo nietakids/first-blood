@@ -4,21 +4,23 @@ body {
     background-position: center;
     background-size: cover;
 
-    color: #212529;
+    color: black;
     font-family: 'Lora', serif;
     font-size: 1.2rem;
     line-height: 1.3rem;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, sub, li {
     font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    
 }
 
 .container {
     margin: 0 auto;
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1200px) {  /*zasada do dopytania i wyjaśnienia*/
     .container {
         max-width: 1110px;
     }
@@ -28,7 +30,10 @@ h1, h2, h3, h4, h5 {
     .container {
         max-width: 960px;
     }
-}    
+}  
+a {
+    text-decoration: none;  
+}  
 
 header .head {
     margin: 80px auto;
@@ -37,43 +42,125 @@ header .head {
 
 header sub {
     color: #7d7e42;
-    text-transform: uppercase;
+
     font-size: 1.6rem;
     font-weight: 900;
 }
 
 header h1 {    
     color: #f1f0ed;
-    text-transform: uppercase;
-    font-size: 2.6rem;
+    font-size: 3.8rem;
     line-height: 2.8rem;
     font-weight: 100;
+    margin-top: 1.2rem;
 }
 
 header nav {
-    width: 100%;    
-    background-color: rgba(33,35,12,.65)
+    width: 100%;
+    background-color: rgba(33,35,12,.65);
 }
 
 header ul  {
     display: flex;
-    margin: 0 auto;
+    margin: 60px auto;
+    width: 50%;
+    
 }
 
 header li  {
     display: inline-block;    
-    margin: 30px;
+    margin: 20px auto;
+    font-weight: 700;
+    
+    
 }
 
 header li a {
     display: block;
-    padding: 5px 20px;
+    padding: 5px 10px;
     margin-left: 10px;
-    font-size: 18px;
+    font-size: 14px;
     color: #ffff;
-    text-align: center;    
+    text-align: center;  
+    
+}
+main {
+    font-size: 12px;
+    text-align: center;
 }
 
-.secondery-box {
+main .text-box {
+    background: #f1f0ed;
+    
+    border: solid;
+    border-color: #f1f0ed;
+    border-width: thin;
+    border-radius: 5px;
+    outline-offset: 10px;
+    line-height: 2.0rem;
+    font-weight: 50;
+    width: 400px; 
+    padding: 1%;
+    position: absolute; top: 28.0rem; left: 18rem;
+    opacity: 0.8;
+    
+}
+main h2 {
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+    font-weight: 100;
+}
+main sub {
+    font-size: 1.0rem;
+    font-weight: 900;
+}
+main a {
+    color: #f1f0ed;
     background-color: #7D7E42;
+    border: solid;
+    border-color: #7D7E42;
+    border-radius: 2px;
+    width: auto;
+    padding: 0.5rem 2.4rem;
+    position: absolute; left: 9.0rem; bottom: -2.3rem;
+    opacity: 1;
+    
+}
+img {
+    width: 38rem;
+    height: 42em; 
+    margin-bottom: 8px;
+    margin-left: 15rem;
+    
+}
+
+[class="secondary-box"] {
+    width: 100%;
+    padding: 4rem;
+    background-color: #7D7E42;
+    margin-top: 2.6rem;
+    
+}
+[class="container"] {
+    background: #f1f0ed;
+    border: double;
+    border-width: thick;
+    border-color: #7D7E42;
+    border-radius: 10px;
+    outline-offset: 10px;
+    line-height: 2.8rem;
+    font-weight: 100;
+    width: 700px; 
+    padding: 1%;
+   
+}
+footer {
+    width: 100%; 
+    background-color: rgba(33,35,12,.65);
+    padding: 40px 40px;
+    font-size: 10px;
+    text-align: center;
+    color: #7D7E42;
+    margin-top: 2.6rem;
+        
 }
