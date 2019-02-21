@@ -26,15 +26,19 @@ h1, h2, h3, h4, h5, sub, li {
     }
 }    
 
-@media all and (min-width: 1000px) {
+@media all and (min-width: 900px) {
     .container {
         max-width: 960px;
     }
 }  
 a {
-    text-decoration: none;  
-}  
-
+    text-decoration: none; 
+    border-style: hidden; /*nie działa*/
+} 
+a:hover{
+    color: #7D7E42;
+    border-color: #f7a40b; 
+}
 header .head {
     margin: 80px auto;
     text-align: center;
@@ -63,7 +67,7 @@ header nav {
 header ul  {
     display: flex;
     margin: 60px auto;
-    width: 50%;
+    width: 22rem;
     
 }
 
@@ -79,9 +83,10 @@ header li a {
     display: block;
     padding: 5px 10px;
     margin-left: 10px;
-    font-size: 14px;
+    font-size: 12px;
     color: #ffff;
-    text-align: center;  
+    text-align: center;
+    
     
 }
 main {
@@ -96,13 +101,12 @@ main .text-box {
     border-color: #f1f0ed;
     border-width: thin;
     border-radius: 5px;
-    outline-offset: 10px;
-    line-height: 2.0rem;
-    font-weight: 50;
-    width: 400px; 
-    padding: 1%;
-    position: absolute; top: 28.0rem; left: 18rem;
-    opacity: 0.8;
+    line-height: 1.5rem;
+    font-weight: 100;
+    max-width: 22rem; 
+    padding: 3%;
+    position: relative; top: -31.0rem; left: 5rem;
+    opacity: 0.9;
     
 }
 main h2 {
@@ -119,48 +123,50 @@ main a {
     background-color: #7D7E42;
     border: solid;
     border-color: #7D7E42;
-    border-radius: 2px;
+    border-radius: 5px;
     width: auto;
-    padding: 0.5rem 2.4rem;
-    position: absolute; left: 9.0rem; bottom: -2.3rem;
+    padding: 1rem 2rem;
+    position: relative; bottom: -3rem;
     opacity: 1;
     
 }
-img {
-    width: 38rem;
-    height: 42em; 
-    margin-bottom: 8px;
-    margin-left: 15rem;
-    
+.primary-box img {
+    display: block;
+    max-width: 45rem;
+    margin: auto 19rem;
+    border-radius: 5px;
+       
 }
 
-[class="secondary-box"] {
+.secondary-box {
     width: 100%;
     padding: 4rem;
     background-color: #7D7E42;
-    margin-top: 2.6rem;
+    margin-top: -18rem;
+    opacity: 0.9;
     
 }
-[class="container"] {
+.secondary-box .container {
     background: #f1f0ed;
     border: double;
     border-width: thick;
     border-color: #7D7E42;
     border-radius: 10px;
     outline-offset: 10px;
-    line-height: 2.8rem;
+    line-height: 1,5rem;
     font-weight: 100;
-    width: 700px; 
-    padding: 1%;
+    max-width: 45rem; 
+    padding: 2%;
    
 }
 footer {
     width: 100%; 
-    background-color: rgba(33,35,12,.65);
-    padding: 40px 40px;
+    background-color: #21230c;
+    padding: 35px;
     font-size: 10px;
     text-align: center;
     color: #7D7E42;
-    margin-top: 2.6rem;
-        
+    margin-top: 3.6rem;
+    opacity: 0.9;
+            
 }
